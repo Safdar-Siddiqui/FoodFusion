@@ -6,6 +6,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Food Fusion | Home </title>
     <link rel="stylesheet" href="style.css">
+    <style>
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 450px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.flip-card-back p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-inline: 10px;
+}
+.flip-card h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+    </style>
 </head>
 <body>
     
@@ -25,6 +77,57 @@
         <img src="menu.png" alt="Menu" id="menuImage" onclick="myFunction()">
         
     </div>
+
+    <div id="main">
+
+        <div class="flip-card">
+            <h2> Asian Cuisine </h2>
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./images/Asian.jpeg" style="width:400px;height:450px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Asian Cuisine</h1>
+                    <p style="margin-top: 15px; font-size: 20px;">Asian food incorporates a few significant provincial cooking styles: Central Asian, East Asian, North Asian, South Asian, Southeast Asian, and West Asian. A food is a trademark way of cooking practices and customs, usually associated with a specific culture. Asia, being the largest and most populous continent, is home to many cultures, many of which have their own characteristic cuisine. Asian cuisine are also famous about their spices.</p>
+                    <a href="https://en.wikipedia.org/wiki/Asian_cuisine" target="_blank" style="position: absolute; bottom: 50px; right: 25px; font-size: 20px; color: #fff; text-decoration: none; box-shadow: 2px;"> Read More...</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card">
+            <h2> Chinese Cuisine </h2>
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="./images/Chinese.jpeg" style="width:400px;height:450px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Chinese Cuisine</h1>
+                    <p style="margin-top: 15px; font-size: 20px;">Chinese cuisine comprise cuisines originating from China.</p>
+                    <p>Because of the Chinese diaspora and historical power of the country, Chinese cuisine has profoundly influenced many other cuisines in Asia and beyond, with modifications made to cater to local palates. Chinese food staples such as rice, soy sauce, noodles, tea, chili oil, and tofu, and utensils such as chopsticks and the wok, can now be found worldwide.</p>
+                    <a href="https://en.wikipedia.org/wiki/Chinese_cuisine" target="_blank" style="position: absolute; bottom: 50px; right: 25px; font-size: 20px; color: #fff; text-decoration: none; box-shadow: 2px;"> Read More...</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <h2> European Cuisine </h2>
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./images/European1.jpeg" style="width:400px;height:450px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>European Cuisine</h1>
+                    <p style="margin-top: 15px; font-size: 20px;">European cuisine comprises the cuisines that originate from the various countries of Europe.</p>
+                    <p>The cuisines of European countries are diverse, although there are some common characteristics that distinguish them from those of other regions.[2] Compared with traditional cooking of East Asia, meat is more prominent and substantial in serving size.[3] Many dairy products are utilised in cooking.</p>
+                    <a href="https://en.wikipedia.org/wiki/European_cuisine" target="_blank" style="position: absolute; bottom: 50px; right: 25px; font-size: 20px; color: #fff; text-decoration: none; box-shadow: 2px;"> Read More...</a>
+                </div>
+            </div>
+        </div>
+
+  </div>
+
+
     <div id="sideMenu">
         <ul>
             <li> <a href="#" class="active"> Home </a> </li> 
