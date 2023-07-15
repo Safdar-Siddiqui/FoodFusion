@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="header">
+        <h1>Food Fusion</h1>
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        <ul>
+            <li> <a href="#" class="active"> Home </a> </li>
+            <li> <a href="#" > Menu </a> </li>
+            <li> <a href="#"> Grocery </a> </li>
+            <li> <a href="#"> Services </a> </li>
+            <li> <a href="./about.html"> About </a> </li>
+        </ul>
+        <img src="menu.png" alt="Menu" id="menuImage" onclick="myFunction()">
+        
+    </div>
+    <div id="sideMenu">
+        <ul>
+            <li> <a href="#" class="active"> Home </a> </li> 
+            <li> <a href="#"> Menu </a> </li> 
+            <li> <a href="#"> Grocery </a> </li> 
+            <li> <a href="#"> Services </a> </li> 
+            <li> <a href="./about.html"> About </a> </li> 
+        </ul>
+    </div>
+
+<footer>
+    &copy; Food Fusion Inc.
+</footer>
+
+<script>
+function myFunction(){
+    var x= document.getElementById("sideMenu");
+    var y=document.getElementById("menuImage");
+    var z=document.getElementById("menuImage").src = "close.png";
+    var a=document.getElementById("menuImage").src = "menu.png"
+    if (x.style.display === "none"){
+        x.style.display = "block";
+        y.src = z;
+        y.style.width="20px";
+        y.style.height="20px";
+    }
+    else{
+        x.style.display = "none";
+        y.src = a;
+        y.style.width="20px";
+        y.style.height="20px";
+    }
+}
+</script>
+</body>
+</html>

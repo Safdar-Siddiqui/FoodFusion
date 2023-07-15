@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+    <div id="header">
+        <h1>Food Fusion</h1>
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        <ul>
+            <li> <a href="./index.html" > Home </a> </li>
+            <li> <a href="#" > Menu </a> </li>
+            <li> <a href="#"> Grocery </a> </li>
+            <li> <a href="#"> Services </a> </li>
+            <li> <a href="#" class="active"> About </a> </li>
+        </ul>
+        <img src="menu.png" alt="Menu" id="menuImage" onclick="myFunction()">
+        
+    </div>
+    <div id="sideMenu">
+        <ul>
+            <li> <a href="./index.html" > Home </a> </li> 
+            <li> <a href="#"> Menu </a> </li> 
+            <li> <a href="#"> Grocery </a> </li> 
+            <li> <a href="#"> Services </a> </li> 
+            <li> <a href="#" class="active"> About </a> </li> 
+        </ul>
+    </div>
+
+<div class="card" style="width: 400px;">
+  <img src="./images/safdar.jpg" alt="Safdar" >
+  <h1>Safdar Siddiqui</h1>
+  <p class="title"> CCO-9089598</p>
+  <p>Food Fusion Inc.</p>
+  <div style="margin: 24px 24px;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="https://twitter.com/SafdarSiddiqui1?t=Yw4jr2rYQELh7SFU9koc3g&s=09" target="_blank" id="twitter"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="https://www.facebook.com/safdar.siddiqui.56" target="_blank" id="fb"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button> <a href="tel:+4733378901"> Contact</a></button></p>
+</div>
+
+<footer>
+    &copy; Food Fusion Inc.
+</footer>
+
+<script>
+    function myFunction(){
+        var x= document.getElementById("sideMenu");
+        if (x.style.display === "none"){
+            x.style.display = "block";
+            x.style.transition= "1s";
+        }
+        else{
+            x.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>
