@@ -63,14 +63,14 @@
     
     <div id="header">
         <h1>Food Fusion</h1>
-        <form class="example" action="action_page.php">
+        <form class="example" action="#">
             <input type="text" placeholder="Search.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         <ul>
             <li> <a href="#" class="active"> Home </a> </li>
-            <li> <a href="#" > Menu </a> </li>
-            <li> <a href="#"> Grocery </a> </li>
+            <li> <a href="./menu.html" > Menu </a> </li>
+            <li> <a href="./grocery.html"> Grocery </a> </li>
             <li> <a href="#"> Recipes </a> </li>
             <li> <a href="./about.html"> About </a> </li>
         </ul>
@@ -80,11 +80,11 @@
 
     <div id="sideMenu">
         <ul>
-            <li> <a href="#" class="active"> Home </a> </li> 
-            <li> <a href="#"> Menu </a> </li> 
-            <li> <a href="#"> Grocery </a> </li> 
-            <li> <a href="#"> Recipes </a> </li> 
-            <li> <a href="./about.html"> About </a> </li> 
+            <li> <a href="#" class="active" style="display:block"> Home </a> </li> 
+            <li> <a href="./menu.html" style="display:block"> Menu </a> </li> 
+            <li> <a href="./grocery.html" style="display:block"> Grocery </a> </li> 
+            <li> <a href="#" style="display:block"> Recipes </a> </li> 
+            <li> <a href="./about.html" style="display:block"> About </a> </li> 
         </ul>
     </div>
 
@@ -155,6 +155,7 @@ function myFunction(){
         y.src = z;
         y.style.width="20px";
         y.style.height="20px";
+
     }
     else{
         x.style.display = "none";

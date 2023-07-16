@@ -57,7 +57,7 @@ body{
     background-color: rgba(109, 107, 107, 0.979);
     color: #fff;
     transition: all 0.6s;
-    /* scale: 1.1; */
+    scale: 0.9;
     /* width: 150px; */
 }
 #header img{
@@ -382,6 +382,11 @@ form.example input[type=text] {
   }
   #fb:hover{
     color: rgba(18, 96, 192,1);
+    opacity: 1;
+  }
+  #linkedin:hover{
+    color: rgb(10, 102, 194);
+    opacity: 1;
   }
 
 

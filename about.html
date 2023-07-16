@@ -10,14 +10,14 @@
 
     <div id="header">
         <h1>Food Fusion</h1>
-        <form class="example" action="action_page.php">
+        <form class="example" action="#">
             <input type="text" placeholder="Search.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         <ul>
             <li> <a href="./index.html" > Home </a> </li>
-            <li> <a href="#" > Menu </a> </li>
-            <li> <a href="#"> Grocery </a> </li>
+            <li> <a href="./menu.html" > Menu </a> </li>
+            <li> <a href="./grocery.html"> Grocery </a> </li>
             <li> <a href="#"> Recipes </a> </li>
             <li> <a href="#" class="active"> About </a> </li>
         </ul>
@@ -26,11 +26,11 @@
     </div>
     <div id="sideMenu">
         <ul>
-            <li> <a href="./index.html" > Home </a> </li> 
-            <li> <a href="#"> Menu </a> </li> 
-            <li> <a href="#"> Grocery </a> </li> 
-            <li> <a href="#"> Recipes </a> </li> 
-            <li> <a href="#" class="active"> About </a> </li> 
+            <li> <a href="./index.html" style="display:block"> Home </a> </li> 
+            <li> <a href="./menu.html" style="display:block"> Menu </a> </li> 
+            <li> <a href="./grocery.html" style="display:block"> Grocery </a> </li> 
+            <li> <a href="#" style="display:block"> Recipes </a> </li> 
+            <li> <a href="#" class="active" style="display:block"> About </a> </li> 
         </ul>
     </div>
 
@@ -42,8 +42,8 @@
   <p>Food Fusion Inc.</p>
   <div style="padding: 24px 50px; display:flex; justify-content: space-evenly; margin-bottom: 20px;">
     <a href="https://twitter.com/SafdarSiddiqui1?t=Yw4jr2rYQELh7SFU9koc3g&s=09" target="_blank" id="twitter"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="https://www.facebook.com/safdar.siddiqui.56" target="_blank" id="fb"><i class="fa fa-facebook"></i></a> 
+    <a href="https://www.linkedin.com/in/muhammad-safdar-40241b262/" target="_blank" id="linkedin"><i class="fa fa-linkedin" style="margin-inline: 15px;"></i></a>  
+    <a href="https://www.facebook.com/safdar.siddiqui.56" target="_blank" id="fb" style="opacity: 1;"><i class="fa fa-facebook"></i></a> 
   </div>
   <p><button style="width: 200px;"> <a href="tel:+923110066026"> Contact</a></button></p>
 </div>
@@ -56,12 +56,20 @@
 <script>
     function myFunction(){
         var x= document.getElementById("sideMenu");
+        var y=document.getElementById("menuImage");
+        var z=document.getElementById("menuImage").src = "close.png";
+        var a=document.getElementById("menuImage").src = "menu.png"
         if (x.style.display === "none"){
             x.style.display = "block";
-            x.style.transition= "1s";
+            y.src = z;
+            y.style.width="20px";
+            y.style.height="20px";
         }
         else{
             x.style.display = "none";
+            y.src = a;
+            y.style.width="20px";
+            y.style.height="20px";
         }
     }
     </script>
