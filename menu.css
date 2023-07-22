@@ -23,9 +23,12 @@ body{
     width: auto;
 }
 
-#header h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif; 
-    font-size: 40px;
+#header #logo{
+    width: 200px;
+    height: 80px;
+    margin-top: 25px;
+    display: inline-block;
+    /* background-color: aquamarine; */
 }
 
 #header ul li {
@@ -153,6 +156,7 @@ form.example input[type=text] {
     height: auto;
     /* border: 1px solid black; */
     border-right: none;
+    padding: 5px;
     /* background-color:turquoise;
     border: 1px solid black; */
     
@@ -222,7 +226,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width:100%;
 }
@@ -247,7 +251,7 @@ footer{
     body{
         background-size: 200% 100vh;
     }
-    #header h1{font-size: 18px;}
+    #header #logo{width: 100px; height: 50px; margin-top: 0px;}
     #header form.example input[type=text] {
         padding: 9px;
         font-size: 17px;
@@ -325,4 +329,51 @@ footer{
       #main {display:flex; flex-direction: column;
         align-items: center;justify-content:space-between; }
     #main .flip-card{margin: 30px;}
+
+    #container{
+        margin-top: 25px;
+        width: 100%;
+        /* background-color: aquamarine; */
+        height: 100%;
+        display: block;
+    
+    }
+    #sideNavBar{
+        width: 100%;
+        height: auto;
+        /* border: 1px solid black; */
+        border-right: none;
+        padding: 5px;
+        /* background-color:turquoise;
+        border: 1px solid black; */
+    }
+
+    #rightPanel{
+        width: 100%;
+        height: fit-content;
+        display: block;
+        /* align-items: center; */
+        /* border: 1px solid; */
+        padding:5px;
+        /* background-color: yellowgreen; */
+    }
+
+    #rightPanel table{
+        /* line-height: 30spx; */
+    
+        width: 100%;
+        height: auto;
+        /* border-left: 1px solid black; */
+        border-collapse: collapse;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        overflow: visible;
+    }
+    /* #rightPanel table td:nth-child(3n+2){padding-left: 10px; background-color: aquamarine; text-align: center;}
+    #rightPanel table td:nth-child(3n+1){background-color: blueviolet;}
+    #rightPanel table td:nth-child(3n){background-color: brown;} */
+
+    #footer{
+        position:fixed;
+    }
 }

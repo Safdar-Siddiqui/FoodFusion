@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Food Fusion | Home </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Food Hub | Home </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <style>
 .flip-card {
   background-color: transparent;
@@ -61,12 +62,14 @@
 </head>
 <body>
     
+    
     <div id="header">
-        <h1>Food Fusion</h1>
+        <a href="./index.html"> <img src="./images/logo.png" alt="Food Hub" id="logo"/> </a>      
         <form class="example" action="#">
             <input type="text" placeholder="Search.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
+          
         <ul>
             <li> <a href="#" class="active"> Home </a> </li>
             <li> <a href="./menu.html" > Menu </a> </li>
@@ -137,11 +140,60 @@
 
   </div>
 
+  <div id="main2">
+
+    <div class="flip-card">
+        <h2> Pakistani Cuisine </h2>
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="./images/Asian.jpeg" style="width:400px;height:450px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Pakistani Cuisine</h1>
+                <p style="margin-top: 15px; font-size: 20px;">Pakistani cuisine can be characterised as a vibrant blend of regional cooking styles and flavours from across South, Central and Western Asia, as well as ingredients, recipes and techniques borrowed from the Indian Subcontinent, Persian cuisine and Arab cuisine. The cuisine of Pakistan also maintains certain Mughal influences within its recipes and techniques.</p>
+                <a href="https://en.wikipedia.org/wiki/Pakistani_cuisine" target="_blank" style="position: absolute; bottom: 50px; right: 25px; font-size: 20px; color: #fff; text-decoration: none; box-shadow: 2px;"> Read More...</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flip-card">
+        <h2> Chinese Cuisine </h2>
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+
+                <img src="./images/Chinese.jpeg" style="width:400px;height:450px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Chinese Cuisine</h1>
+                <p style="margin-top: 15px; font-size: 20px;">Chinese cuisine comprise cuisines originating from China.</p>
+                <p>Because of the Chinese diaspora and historical power of the country, Chinese cuisine has profoundly influenced many other cuisines in Asia and beyond, with modifications made to cater to local palates. Chinese food staples such as rice, soy sauce, noodles, tea, chili oil, and tofu, and utensils such as chopsticks and the wok, can now be found worldwide.</p>
+                <a href="https://en.wikipedia.org/wiki/Chinese_cuisine" target="_blank" style="position: absolute; bottom: 50px; right: 25px; font-size: 20px; color: #fff; text-decoration: none; box-shadow: 2px;"> Read More...</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <h2> European Cuisine </h2>
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="./images/European1.jpeg" style="width:400px;height:450px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>European Cuisine</h1>
+                <p style="margin-top: 15px; font-size: 20px;">European cuisine comprises the cuisines that originate from the various countries of Europe.</p>
+                <p>The cuisines of European countries are diverse, although there are some common characteristics that distinguish them from those of other regions. Compared with traditional cooking of East Asia, meat is more prominent and substantial in serving size. Many dairy products are utilised in cooking.</p>
+                <a href="https://en.wikipedia.org/wiki/European_cuisine" target="_blank" style="position: absolute; bottom: 50px; right: 25px; font-size: 20px; color: #fff; text-decoration: none; box-shadow: 2px;"> Read More...</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 
 
 
 <footer>
-    &copy; Food Fusion Inc.
+    &copy; Food Hub Inc.
 </footer>
 
 <script>
