@@ -21,6 +21,7 @@ body{
     padding-inline: 30px;
     height: 70px;
     width: auto;
+    
 }
 
 #header #logo{
@@ -299,7 +300,6 @@ footer{
     justify-content: center;
     align-items: center;
     position:sticky;
-    
     bottom: 0;
     width:100%;
 }
